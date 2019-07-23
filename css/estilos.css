@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+ 
+    min-height: 100vh;
+    background: #F5F5D0;
+}
+
+.contenedor{
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+
+.contenedor-v{
+    width: 40%;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+}
+
+#slider{
+    width: 1000px;
+    height: 350px;
+    background-image: url(../img/banner2.jpg);
+    background-size: 100% 100%;
+    animation:slider 10s infinite linear;
+}
+
+
+#slider-v{
+    width: 259px;
+    height: 1600px;
+    background-image: url(../img/bannerv.jpg);
+    background-size: 100% 100%;
+    animation:sliderv 10s infinite linear;
+}
+
+.caja-slider{
+    width: 100%;
+    float: left;
+    margin-bottom: 4%;
+}
+
+@keyframes slider{
+    to{
+      background-position:  1000px; 
+    }
+}
+
+@keyframes sliderv{
+    to{
+        background-position-y:  1600px; 
+    }
+}
+
